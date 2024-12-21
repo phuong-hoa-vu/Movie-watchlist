@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    font-family: "Inter", serif;
+}
+#heading{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./img/img.png');
+    background-position: 10% 20%;
+    height: 13rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+    background-blend-mode: luminosity;
+}
+h1{
+    color: white;
+    font-size: 2.8rem;
+}
+a {
+   text-decoration: none;
+   color: white;
+   font-weight: 900;
+}
+
