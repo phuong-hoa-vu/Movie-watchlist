@@ -1,8 +1,10 @@
-document.getElementById('search-btn').addEventListener('click', function () {
-    const input = document.getElementById('input');
-    const movieList = document.getElementById('movie-list');
+const input = document.getElementById('input');
+const movieList = document.getElementById('movie-list');
 
-    fetch(`http://www.omdbapi.com/?s=${input.value}&apikey=c15f76bc`)
+document.getElementById('search-btn').addEventListener('click', function () {
+
+    if(input.value){
+        fetch(`http://www.omdbapi.com/?s=${input.value}&apikey=c15f76bc`)
         .then(res => res.json())
         .then(data => {
             const films = data.Search;
@@ -40,6 +42,7 @@ document.getElementById('search-btn').addEventListener('click', function () {
                                 <p>${dat.Plot}</p>
                             </div>
                         </div>
+                        <hr>
                     `;
                 });
             });
@@ -47,4 +50,11 @@ document.getElementById('search-btn').addEventListener('click', function () {
 
     // Clear input field
     input.value = '';
-});
+    } else {
+        movieList.innerHTML = `
+        <p class="error-search">
+        Unable to find what you’re looking for. 
+        Please try another search.
+        </p>`
+    }
+})

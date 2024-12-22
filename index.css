@@ -78,3 +78,12 @@ img{
     height: 2.8rem;
  }
 
+.error-search {
+    text-align: center;
+    margin: auto;
+    padding: 5rem 0;
+    width: 60vw;
+    font-weight: 700;
+    color: #DFDDDD;
+    font-size: 2rem;
+}
