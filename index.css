@@ -51,5 +51,30 @@ img{
     margin-right: 1rem;
 }
 
-
+#search {
+    display: flex;
+    justify-content: center;
+    margin-top: -1rem;
+}
+ #svg {
+    background-color: white;
+    border-radius: 6px 0 0 6px;
+    border: 1px solid #D1D5DB;
+    border-right: none;
+    height: 2.65rem;
+    padding: 0 5px;
+ }
+ #input {
+    border: 1px solid #D1D5DB;
+    border-left: none;
+    width: 50vw;
+    height: 2.5rem;
+ }
+ #search-btn{
+    border: 1px solid #D1D5DB;
+    border-left: none;
+    border-radius: 0 6px 6px 0;
+    width: 15vw;
+    height: 2.8rem;
+ }
 
